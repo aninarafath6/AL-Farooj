@@ -47,4 +47,24 @@ export default {
     title: "Biryani",
     url: "/api/dish/pizza",
   },
+  fetchPureVeg: {
+    title: "Pure Veg",
+    url: "/api/dish/pizza",
+  },
+  fetchIndian: {
+    title: "Indian",
+    url: "/api/dish/pizza",
+  },
+  fetchNorthIndian: {
+    title: "North Indian",
+    url: "/api/dish/pizza",
+  },
+  fetchHealthyFood: {
+    title: "Healthy Food",
+    url: "/api/dish/pizza",
+  },
+  fetchArabian: {
+    title: "Arabian",
+    url: "/api/dish/pizza",
+  },
 };
