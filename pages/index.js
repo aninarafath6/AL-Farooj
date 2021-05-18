@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Dishes from "../components/Dishes";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import dummyDishes from '../utils/dummyData'
 
-export default function Home() {
+export default function Home({ dummyDishes }) {
   return (
     <div className="">
       <Head>
@@ -17,12 +19,23 @@ export default function Home() {
         />
       </Head>
 
-
       {/* header component */}
       <Header />
 
       {/* nav component */}
       <Nav />
+
+      {/* dishes component  */}
+      <Dishes dummyDishes={dummyDishes} />
     </div>
   );
+}
+
+export const getStaticProps = async () => {
+ 
+  return {
+    props: {
+      dummyDishes,
+    },
+  };
 }
