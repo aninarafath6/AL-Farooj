@@ -5,6 +5,7 @@ function DishItem({ dish }) {
   return (
     <div className=" group p-2 transition duration-200 transform hover:scale-105 hover:z-50 cursor-pointer">
       <Image
+        objectFit='cover'
         layout="responsive"
         width={1920}
         height={1080}
