@@ -5,10 +5,15 @@
 
 @layer base {
   body {
-    @apply bg-primary text-gray-300 ;
+    @apply bg-primary text-gray-300;
   }
 }
 
-a,button{
-  -webkit-tap-highlight-color: transparent;
+input,
+body,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
