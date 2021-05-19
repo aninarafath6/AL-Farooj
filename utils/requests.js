@@ -1,70 +1,90 @@
 export default {
   fetchFastFood: {
     title: "Fast Food",
-    url: "/api/dish/Fast Food",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=chicken",
   },
   fetchGrill: {
     title: "Grill",
-    url: "/api/dish/grill",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=grill",
   },
   fetchPastas: {
     title: "Pastas",
-    url: "/api/dish/top_of_the_week",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=pasta",
   },
   fetchPizza: {
     title: "Pizza",
-    url: "/api/dish/pizza",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=pizza",
+  },
+  fetchDessert: {
+    title: "Dessert",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert",
+  },
+  fetchVeg: {
+    title: "Pure Veg",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=veg",
+  },
+  fetchIceCream: {
+    title: "Indian",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=indian",
+  },
+  fetchChinese: {
+    title: "Chinese",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=chinese",
+  },
+  fetchAmerican: {
+    title: "American",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=american",
+  },
+  fetchThailand: {
+    title: "Thailand",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=Thai",
+  },
+  fetchCanadian: {
+    title: "Canadian",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian",
   },
   fetchSalads: {
-    title: "Pizza",
-    url: "/api/dish/pizza",
+    title: "Salads",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=salad",
   },
-  fetchSnacks: {
-    title: "Snacks",
-    url: "/api/dish/pizza",
+  fetchSeafood: {
+    title: "Seafood",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood",
   },
   fetchSweets: {
     title: "Sweets",
-    url: "/api/dish/pizza",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=sweet",
   },
-  fetchBakery: {
-    title: "Bakery",
-    url: "/api/dish/pizza",
-  },
-  fetch: {
-    title: "Juices",
-    url: "/api/dish/pizza",
-  },
-  fetch: {
-    title: "Kebabs",
-    url: "/api/dish/pizza",
-  },
-  fetchIceCream: {
-    title: "Ice Cream",
-    url: "/api/dish/pizza",
+  fetchCakes: {
+    title: "Cakes",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=cakes",
   },
   fetchBiryani: {
     title: "Biryani",
-    url: "/api/dish/pizza",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=biryani",
   },
-  fetchPureVeg: {
+  fetchVeg: {
     title: "Pure Veg",
-    url: "/api/dish/pizza",
+    url: "https://www.themealdb.com/api/json/v1/1/search.php?s=veg",
   },
-  fetchIndian: {
+  fetchIceCream: {
     title: "Indian",
-    url: "/api/dish/pizza",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=indian",
   },
-  fetchNorthIndian: {
-    title: "North Indian",
-    url: "/api/dish/pizza",
+  fetchChinese: {
+    title: "Chinese",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=chinese",
   },
-  fetchHealthyFood: {
-    title: "Healthy Food",
-    url: "/api/dish/pizza",
+  fetchAmerican: {
+    title: "American",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=american",
   },
-  fetchArabian: {
-    title: "Arabian",
-    url: "/api/dish/pizza",
+  fetchThailand: {
+    title: "Thailand",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=Thai",
+  },
+  fetchCanadian: {
+    title: "Canadian",
+    url: "https://www.themealdb.com/api/json/v1/1/filter.php?a=Canadian",
   },
 };

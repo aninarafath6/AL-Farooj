@@ -1,3 +1,3 @@
 module.exports = {
-  images: { domains: ["images.pexels.com"] },
+  images: { domains: ["www.themealdb.com"] },
 };

@@ -10,7 +10,7 @@ function Nav() {
           <h2
             onClick={() => router.push(`/?genre=${key}`)}
             key={i}
-            className=" text-xl cursor-pointer transform transition ease-in-out duration-100 hover:scale-125 hover:text-white  active:text-red last:pr-28 select-none"
+            className=" text-xl cursor-pointer transform transition ease-in-out duration-100 hover:scale-125 hover:text-white  active:text-red focus:text-red last:pr-28 select-none"
           >
             {title}
           </h2>

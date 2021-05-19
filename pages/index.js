@@ -1,10 +1,12 @@
+import axios from "axios";
 import Head from "next/head";
 import Dishes from "../components/Dishes";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import dummyDishes from '../utils/dummyData'
+import requests from "../utils/requests";
 
-export default function Home({ dummyDishes }) {
+export default function Home({ dishes }) {
+  console.log(dishes);
   return (
     <div className="">
       <Head>
@@ -26,16 +28,21 @@ export default function Home({ dummyDishes }) {
       <Nav />
 
       {/* dishes component  */}
-      <Dishes dummyDishes={dummyDishes} />
+      <Dishes dishes={dishes} />
     </div>
   );
 }
 
-export const getStaticProps = async () => {
- 
+export const getServerSideProps = async (context) => {
+  const genre = context.query.genre;
+
+  const dishes = await axios.get(
+    requests[genre]?.url || requests.fetchFastFood.url
+  );
+  console.log(dishes);
   return {
     props: {
-      dummyDishes,
+      dishes: dishes.data.meals,
     },
   };
-}
+};
