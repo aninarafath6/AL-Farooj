@@ -9,8 +9,11 @@ module.exports = {
           DEFAULT: "#ea7c69",
         },
         primary: {
-          DEFAULT:'#252836'
-        }
+          DEFAULT: "#252836",
+        },
+      },
+      screens: {
+        "3xl": "1428px",
       },
     },
   },
