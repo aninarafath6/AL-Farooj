@@ -4,7 +4,7 @@ import FlipMove from "react-flip-move";
 
 function Dishes({ dummyDishes }) {
   return (
-    <div className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center">
+    <div className="px-5 my-10 sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 3xl:grid-cols-4">
       {dummyDishes.map((dish, i) => (
         <DishItem dish={dish} key={i} />
       ))}

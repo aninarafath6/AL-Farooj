@@ -10,10 +10,12 @@ module.exports = {
         },
         primary: {
           DEFAULT: "#252836",
+          light: " rgb(45, 48, 62)",
+          dark: " rgb(31, 29, 43)",
         },
       },
       screens: {
-        "3xl": "1428px",
+        "3xl": "2000px",
       },
     },
   },

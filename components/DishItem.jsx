@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function DishItem({ dish }) {
   return (
-    <div className="p-2">
+    <div className=" group p-2 transition duration-200 transform hover:scale-105 hover:z-50 cursor-pointer">
       <Image
         layout="responsive"
         width={1920}
@@ -11,6 +11,21 @@ function DishItem({ dish }) {
         src={dish.imageURL}
         alt=""
       />
+      <div>
+        <p className="italic mt-2">
+          ₹ {dish.price} <span className="p-1 mx-2 rounded">{dish.type}</span>
+        </p>
+        <h2 className="text-2xl mt-1 text-white transition-all duration-100 ease-in-out group-hover:font-bold">
+          {dish.name}
+        </h2>
+        <button
+          type="button"
+          className="focus:outline-none focus:bg-primary-dark bg-primary-light py-1 px-2 rounded my-2 outline-none border-none select-none cursor-pointer text-sm xl:text-lg opacity-0 group-hover:opacity-100"
+        >
+          ADD TO CART
+        </button>
+        
+      </div>
     </div>
   );
 }
