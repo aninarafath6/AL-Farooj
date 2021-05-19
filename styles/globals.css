@@ -8,3 +8,7 @@
     @apply bg-primary text-gray-300 ;
   }
 }
+
+a,button{
+  -webkit-tap-highlight-color: transparent;
+}

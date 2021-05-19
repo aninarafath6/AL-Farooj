@@ -1,11 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 function DishItem({ dish }) {
   return (
-    <div className=" group p-2 transition duration-200 transform hover:scale-105 hover:z-50 cursor-pointer">
+    <div className="  group p-2 transition duration-200 transform sm:hover:scale-105 hover:z-50 cursor-pointer">
       <Image
-        objectFit='cover'
+        objectFit="cover"
         layout="responsive"
         width={1920}
         height={1080}
@@ -20,12 +20,12 @@ function DishItem({ dish }) {
           {dish.name}
         </h2>
         <button
+          onClick={() => alert("item added to cart")}
           type="button"
-          className="focus:outline-none focus:bg-primary-dark bg-primary-light py-1 px-2 rounded my-2 outline-none border-none select-none cursor-pointer text-sm xl:text-lg opacity-0 group-hover:opacity-100"
+          className="focus:outline-none hover:bg-primary-dark bg-primary-light py-1 px-2 rounded my-2 outline-none border-none  cursor-pointer text-sm xl:text-lg opacity-0 group-hover:opacity-100"
         >
           ADD TO CART
         </button>
-        
       </div>
     </div>
   );
